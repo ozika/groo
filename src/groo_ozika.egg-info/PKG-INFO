@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: groo-ozika
+Version: 0.0.2
+Summary: Get root directory based on file name
+Home-page: https://github.com/ozika/groo
+Author: Ondrej Zika
+Author-email: author@example.com
+Project-URL: Bug Tracker, https://github.com/ozika/groo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This package simply finds the root of a project based on a filename. 
+
+**Usage**
+
+```python
+from groo.groo import get_root
+print(get_root(".my_hidden_root_file"))
+```
+
+Where `.my_hidden_root_file` sits in the root directory.
