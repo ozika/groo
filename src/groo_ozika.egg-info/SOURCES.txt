@@ -2,6 +2,8 @@ LICENSE
 README.md
 pyproject.toml
 setup.cfg
+src/groo/__init__.py
+src/groo/groo.py
 src/groo_ozika.egg-info/PKG-INFO
 src/groo_ozika.egg-info/SOURCES.txt
 src/groo_ozika.egg-info/dependency_links.txt

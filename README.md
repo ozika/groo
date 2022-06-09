@@ -1,3 +1,7 @@
+> "Groo, the calling of home."
+
+ 
+
 This package simply finds the root of a project based on a filename. 
 
 **Usage**
