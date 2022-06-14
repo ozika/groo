@@ -1,4 +1,4 @@
-> "Groo, the calling of home (directory)."
+> "Groo, the calling of the home (directory)."
 
  
 
