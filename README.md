@@ -1,5 +1,4 @@
-![](shttps://github.com/ozika/groo/tree/main/src/groo/logo.png)
-
+<img src="https://raw.githubusercontent.com/ozika/groo/main/src/groo/logo.png" width=400>
 
 
 This package simply finds the root of a project based on a filename.
