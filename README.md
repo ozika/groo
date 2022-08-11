@@ -1,4 +1,4 @@
-![](src/groo/groo.png)>
+![](src/groo/groo.png)
 
 
 
