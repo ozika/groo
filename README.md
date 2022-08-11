@@ -1,4 +1,4 @@
-> "Groo, the calling of the home (directory)."
+![](src/groo/groo.png)>
 
 
 
@@ -48,7 +48,7 @@ Once the hidden file is created, one might want to load it in their python scrip
 To do that, we can use this example:
 ```python
 from groo.groo import get_root
-root_folder = get_root("my_hidden_root_file")
+root_folder = get_root(".my_hidden_root_file")
 
 import pandas as pd
 df = pd.read_csv(os.path.join(root_folder, "data", "mydata.csv"))
@@ -57,3 +57,7 @@ df = pd.read_csv(os.path.join(root_folder, "data", "mydata.csv"))
 Note that the same code will work for **any** script that is anywhere whithin the `project_folder`.
 
 Enjoy!
+
+
+---
+Logo by [AbtoCreative](https://www.flaticon.com/authors/abtocreative) :heart:
