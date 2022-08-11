@@ -1,4 +1,4 @@
-![](src/groo/groo.png)
+![](shttps://github.com/ozika/groo/tree/main/src/groo/groo.png)
 
 
 
