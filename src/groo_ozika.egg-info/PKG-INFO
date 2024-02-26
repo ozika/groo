@@ -1,10 +1,10 @@
 Metadata-Version: 2.1
 Name: groo-ozika
-Version: 0.0.5
+Version: 0.0.7
 Summary: Get root directory based on file name
 Home-page: https://github.com/ozika/groo
 Author: Ondrej Zika
-Author-email: author@example.com
+Author-email: ondrej.zika@protonmail.com
 Project-URL: Bug Tracker, https://github.com/ozika/groo/issues
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
@@ -13,8 +13,7 @@ Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
-> "Groo, the calling of the home (directory)."
-
+<img src="https://raw.githubusercontent.com/ozika/groo/main/src/groo/logo.png" width=400>
 
 
 This package simply finds the root of a project based on a filename.
@@ -47,6 +46,11 @@ root_folder = get_root(".my_hidden_root_file")
 
 **Tip:** Always use `os.path.join()` to declare paths. It will make your code run across platforms and you won't get any strange erorrs (e.g., extra `/`).
 
+**Optional**
+If you want to provide a time limit to the search for the root you can do so by using the `timelim` flag (in seconds). 
+```python
+root_folder = get_root(".my_hidden_root_file", timelim=10)
+```
 
 ---
 
@@ -63,7 +67,7 @@ Once the hidden file is created, one might want to load it in their python scrip
 To do that, we can use this example:
 ```python
 from groo.groo import get_root
-root_folder = get_root("my_hidden_root_file")
+root_folder = get_root(".my_hidden_root_file")
 
 import pandas as pd
 df = pd.read_csv(os.path.join(root_folder, "data", "mydata.csv"))
@@ -72,3 +76,7 @@ df = pd.read_csv(os.path.join(root_folder, "data", "mydata.csv"))
 Note that the same code will work for **any** script that is anywhere whithin the `project_folder`.
 
 Enjoy!
+
+
+---
+Logo by [AbtoCreative](https://www.flaticon.com/authors/abtocreative) :heart:
