@@ -66,7 +66,7 @@ Enjoy!
 **New in version 0.0.7** 
 Previous versions of `groo` only move up, that is, they look for the root file in the current folder, if it's not found then the search moves one folder up. However, this means that if the root file is anywhere *but* on the upward trajectory then it wouldn't be found. 
 
-<img src="https://raw.githubusercontent.com/ozika/groo/main/src/groo/v007_upd.png" width=400>
+<img src="https://github.com/ozika/groo/blob/main/src/groo/v007_upd.svg" width=400>
 
 ---
 Logo by [AbtoCreative](https://www.flaticon.com/authors/abtocreative) :heart:
