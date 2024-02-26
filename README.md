@@ -31,6 +31,11 @@ root_folder = get_root(".my_hidden_root_file")
 
 **Tip:** Always use `os.path.join()` to declare paths. It will make your code run across platforms and you won't get any strange erorrs (e.g., extra `/`).
 
+**Optional**
+If you want to provide a time limit to the search for the root you can do so by using the `timelim` flag (in seconds). 
+```python
+root_folder = get_root(".my_hidden_root_file", timelim=10)
+```
 
 ---
 
@@ -57,6 +62,11 @@ Note that the same code will work for **any** script that is anywhere whithin th
 
 Enjoy!
 
+## Release Notes
+**New in version 0.0.7** 
+Previous versions of `groo` only move up, that is, they look for the root file in the current folder, if it's not found then the search moves one folder up. However, this means that if the root file is anywhere *but* on the upward trajectory then it wouldn't be found. 
+
+<img src="https://raw.githubusercontent.com/ozika/groo/main/src/groo/v007_upd.png" width=400>
 
 ---
 Logo by [AbtoCreative](https://www.flaticon.com/authors/abtocreative) :heart:
