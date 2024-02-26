@@ -64,9 +64,10 @@ Enjoy!
 
 ## Release Notes
 **New in version 0.0.7** 
-Previous versions of `groo` only move up, that is, they look for the root file in the current folder, if it's not found then the search moves one folder up. However, this means that if the root file is anywhere *but* on the upward trajectory then it wouldn't be found. 
+1. Previous versions of `groo` could only search for the root flag above in the directory hierarchy. Starting `0.0.7`, the flag can be in theory anywhere on the computer. The search algorithm starts from the location of the file and on each iteration moves a level up, performs full search.
+2. Since full search can sometimes be unpractical, `groo` now allows users to specify maximum time limit using the `timelim` flag `get_root(".my_hidden_root_file", timelim=10)`. 
 
-<img src="https://github.com/ozika/groo/blob/main/src/groo/v007_upd.svg" width=400>
+<img src="https://github.com/ozika/groo/blob/main/src/groo/v007_upd.svg" width=600>
 
 ---
 Logo by [AbtoCreative](https://www.flaticon.com/authors/abtocreative) :heart:
