@@ -16,9 +16,8 @@ def get_root(rootfile, timelim=10, verbose=False):
             found = 1
         else:
             d=d.parent
-
-    d = Path(os.getcwd())
     if found==0:
+        d = Path(os.getcwd())
         if verbose: 
             print("Switch to full tree search")
         while (found != 1) & ((time.time()-start) < float(timelim)):
