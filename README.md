@@ -63,9 +63,9 @@ Note that the same code will work for **any** script that is anywhere whithin th
 Enjoy!
 
 ## Release Notes
-**New in version 0.1.0**
-1/ Fixed bug from 0.0.9 
-2/ Added verbose option, if `verbose=True` groo will print out the directories that it's searching
+**New in version 0.1.0**  
+1/ Fixed bug from 0.0.9  
+2/ Added verbose option, if `verbose=True` groo will print out the directories that it's searching 
 
 Added "quick search" which scans directories above in the hierarchy before performing a more comprehensive search.  
 
