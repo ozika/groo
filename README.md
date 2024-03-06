@@ -63,14 +63,22 @@ Note that the same code will work for **any** script that is anywhere whithin th
 Enjoy!
 
 ## Release Notes
+**New in version 0.1.0**
+1/ Fixed bug from 0.0.9 
+2/ Added verbose option, if `verbose=True` groo will print out the directories that it's searching
+
+Added "quick search" which scans directories above in the hierarchy before performing a more comprehensive search.  
+
 **New in version 0.0.9**
+
 Added "quick search" which scans directories above in the hierarchy before performing a more comprehensive search.  
 
 **New in version 0.0.8** 
+
 Removed bug which was displaying path. 
 
 **New in version 0.0.7** 
-1. Previous versions of `groo` could only search for the root flag above in the directory hierarchy. Starting `0.0.7`, the flag can be in theory anywhere on the computer. The search algorithm starts from the location of the file and on each iteration moves a level up, performs full search.
+1. Previous versions of `groo` could only search for the root flag above in the directory hierarchy. Starting `0.0.7`, the flag can be in theory anywhere on the computer. The search algorithm starts from the location of the file and on each iteration moves a level up, performs a full search.
 2. Since full search can sometimes be unpractical, `groo` now allows users to specify maximum time limit using the `timelim` flag `get_root(".my_hidden_root_file", timelim=10)`. 
 
 <img src="https://github.com/ozika/groo/blob/main/src/groo/v007_upd.svg" width=600>
