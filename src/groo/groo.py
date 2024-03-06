@@ -5,7 +5,7 @@ def get_root(rootfile, timelim=10):
     start = time.time()
     d = Path(os.getcwd())
     found = 0   
-    while (found == 0) &  (time.time()-start)<float(3):
+    while (found == 0) &  ((time.time()-start)<float(3)):
         if os.path.isfile(os.path.join(d, rootfile)):
             found = 1
         else:
